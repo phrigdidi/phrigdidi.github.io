@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html semantic tags</title>
+    <style>
+        /* getting fancy */
+        body{font-family:"comic sans ms",cursive,sans-serif;background-color:#2E0A3E;color:#ADD8E6;padding:20px;line-height:1.6;}
+        textarea{border:none;padding:5px;background-color:#000000;color:#00FF7F;width:100%;max-width:600px;font-family:"courier new",monospace;}
+        table{width:100%;border-collapse:collapse;max-width:600px;margin-bottom:20px;}
+        th,td{border:1px solid #ADD8E6;padding:8px;text-align:left;}
+        th{background-color:#4B0082;}
+        .yes{color:#90EE90;font-weight:bold;}
+        .no{color:#FF6347;font-weight:bold;}
+        a{color:#ADD8E6;text-decoration:underline;}
+        hr{border-color:#ADD8E6;}
+        .home-link{font-size:0.8em;text-decoration:underline;}
+        nav{margin-bottom:20px;}
+    </style>
+</head>
+<body>
+    <nav><a href="https://phrigdidi.github.io/" class="home-link">home</a></nav>
+    <h1>html semantic tags</h1>
+    <h2>common html tags: semantic vs. non-semantic</h2>
+    <table>
+        <tr><th>tag name</th><th>semantic?</th><th>description</th></tr>
+        <tr><td>&lt;article&gt;</td><td class="yes">yes</td><td>define an independent, self-contained piece of content.</td></tr>
+        <tr><td>&lt;aside&gt;</td><td class="yes">yes</td><td>define content that is tangentially related to the surrounding content.</td></tr>
+        <tr><td>&lt;div&gt;</td><td class="no">no</td><td>generic container for flow content.</td></tr>
+        <tr><td>&lt;figure&gt;</td><td class="yes">yes</td><td>group multimedia content with a caption.</td></tr>
+        <tr><td>&lt;footer&gt;</td><td class="yes">yes</td><td>define the footer of a document.</td></tr>
+        <tr><td>&lt;header&gt;</td><td class="yes">yes</td><td>define the header of a document or a section.</td></tr>
+        <tr><td>&lt;main&gt;</td><td class="yes">yes</td><td>define the main content of a document.</td></tr>
+        <tr><td>&lt;nav&gt;</td><td class="yes">yes</td><td>define a section of navigation links.</td></tr>
+        <tr><td>&lt;section&gt;</td><td class="yes">yes</td><td>group related content together.</td></tr>
+        <tr><td>&lt;span&gt;</td><td class="no">no</td><td>generic inline container for phrasing content.</td></tr>
+    </table>
+    <h2>what is the difference between non-semantic and semantic tags in html?</h2>
+    <p>non-semantic tags like <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are generic containers that tell the browser nothing about their content. semantic tags, however, clearly describe their purpose to both the browser and developer. while the browser renders both types of tags the same way, semantic tags improve code readability, accessibility, and seo. for example, a screen reader can identify a <code>&lt;nav&gt;</code> element as a navigation section, but a <code>&lt;div&gt;</code> provides no such context. semantic tags make your html more meaningful and easier to maintain.</p>
+    <textarea cols="50" rows="5">
+<!-- non-semantic example -->
+<div class="header">
+  <div class="nav">
+    <a href="#">home</a>
+    <a href="#">about</a>
+  </div>
+</div>
+    </textarea>
+    <h2>why should we use semantic tags?</h2>
+    <p>semantic tags make your html more intuitive and self-documenting, which helps developers understand the structure of your page at a glance. they also improve accessibility by providing clear landmarks for screen readers and assistive technologies. additionally, semantic html helps search engines better understand your content, which can boost your site's visibility and ranking.</p>
+    <hr>
+</body>
+</html>
