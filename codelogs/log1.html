@@ -24,17 +24,17 @@
     <h1>html semantic tags</h1>
     <h2>common html tags: semantic vs. non-semantic</h2>
     <table>
-        <tr><th>tag name</th><th>semantic?</th><th>description</th></tr>
-        <tr><td>&lt;article&gt;</td><td class="yes">yes</td><td>define an independent, self-contained piece of content.</td></tr>
-        <tr><td>&lt;aside&gt;</td><td class="yes">yes</td><td>define content that is tangentially related to the surrounding content.</td></tr>
-        <tr><td>&lt;div&gt;</td><td class="no">no</td><td>generic container for flow content.</td></tr>
-        <tr><td>&lt;figure&gt;</td><td class="yes">yes</td><td>group multimedia content with a caption.</td></tr>
-        <tr><td>&lt;footer&gt;</td><td class="yes">yes</td><td>define the footer of a document.</td></tr>
-        <tr><td>&lt;header&gt;</td><td class="yes">yes</td><td>define the header of a document or a section.</td></tr>
-        <tr><td>&lt;main&gt;</td><td class="yes">yes</td><td>define the main content of a document.</td></tr>
-        <tr><td>&lt;nav&gt;</td><td class="yes">yes</td><td>define a section of navigation links.</td></tr>
-        <tr><td>&lt;section&gt;</td><td class="yes">yes</td><td>group related content together.</td></tr>
-        <tr><td>&lt;span&gt;</td><td class="no">no</td><td>generic inline container for phrasing content.</td></tr>
+        <tr><th>tag name</th><th>semantic?</th><th>what it does</th></tr>
+        <tr><td>&lt;article&gt;</td><td class="yes">yes</td><td>a standalone piece of content, like a blog post or news article.</td></tr>
+        <tr><td>&lt;aside&gt;</td><td class="yes">yes</td><td>extra content that’s related but not the main focus, like a sidebar or a fun fact box.</td></tr>
+        <tr><td>&lt;div&gt;</td><td class="no">no</td><td>a plain box for grouping stuff together. it doesn’t say what’s inside.</td></tr>
+        <tr><td>&lt;figure&gt;</td><td class="yes">yes</td><td>holds images, videos, or diagrams, usually with a caption.</td></tr>
+        <tr><td>&lt;footer&gt;</td><td class="yes">yes</td><td>the bottom part of a page, where you’d find copyright info or contact links.</td></tr>
+        <tr><td>&lt;header&gt;</td><td class="yes">yes</td><td>the top part of a page or section, usually with a title or menu.</td></tr>
+        <tr><td>&lt;main&gt;</td><td class="yes">yes</td><td>the main content of the page—the stuff people actually came to see.</td></tr>
+        <tr><td>&lt;nav&gt;</td><td class="yes">yes</td><td>a section with links to help you navigate the site, like a menu.</td></tr>
+        <tr><td>&lt;section&gt;</td><td class="yes">yes</td><td>a chunk of related content, like a chapter in a book.</td></tr>
+        <tr><td>&lt;span&gt;</td><td class="no">no</td><td>a tiny container for text or small bits of content. it doesn’t say what’s inside.</td></tr>
     </table>
     <h2>what is the difference between non-semantic and semantic tags in html?</h2>
     <p>non-semantic tags like <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are generic containers that tell the browser nothing about their content. semantic tags, however, clearly describe their purpose to both the browser and developer. while the browser renders both types of tags the same way, semantic tags improve code readability, accessibility, and seo. for example, a screen reader can identify a <code>&lt;nav&gt;</code> element as a navigation section, but a <code>&lt;div&gt;</code> provides no such context. semantic tags make your html more meaningful and easier to maintain.</p>
@@ -52,3 +52,4 @@
     <hr>
 </body>
 </html>
+
