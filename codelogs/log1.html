@@ -6,7 +6,7 @@
     <title>html semantic tags</title>
     <style>
         /* getting fancy */
-        body{font-family:"comic sans ms",cursive,sans-serif;background-color:#2E0A3E;color:#ADD8E6;padding:20px;line-height:1.6;}
+        body{font-family:"comic sans ms",sans-serif;background-color:#2E0A3E;color:#ADD8E6;padding:20px;line-height:1.6;}
         textarea{border:none;padding:5px;background-color:#000000;color:#00FF7F;width:100%;max-width:600px;font-family:"courier new",monospace;}
         table{width:100%;border-collapse:collapse;max-width:600px;margin-bottom:20px;}
         th,td{border:1px solid #ADD8E6;padding:8px;text-align:left;}
@@ -15,7 +15,7 @@
         .no{color:#FF6347;font-weight:bold;}
         a{color:#ADD8E6;text-decoration:underline;}
         hr{border-color:#ADD8E6;}
-        .home-link{font-size:0.8em;text-decoration:underline;}
+        .home-link{font-size:0.8em;text-decoration:underline !important;}
         nav{margin-bottom:20px;}
     </style>
 </head>
@@ -36,8 +36,9 @@
         <tr><td>&lt;section&gt;</td><td class="yes">yes</td><td>a chunk of related content, like a chapter in a book.</td></tr>
         <tr><td>&lt;span&gt;</td><td class="no">no</td><td>a tiny container for text or small bits of content. it doesn’t say what’s inside.</td></tr>
     </table>
-    <h2>what is the difference between non-semantic and semantic tags in html?</h2>
-    <p>non-semantic tags like <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are generic containers that tell the browser nothing about their content. semantic tags, however, clearly describe their purpose to both the browser and developer. while the browser renders both types of tags the same way, semantic tags improve code readability, accessibility, and seo. for example, a screen reader can identify a <code>&lt;nav&gt;</code> element as a navigation section, but a <code>&lt;div&gt;</code> provides no such context. semantic tags make your html more meaningful and easier to maintain.</p>
+    <h2>what’s the difference between non-semantic and semantic tags?</h2>
+    <p>non-semantic tags like <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> are like empty boxes—they hold stuff, but they don’t tell you what’s inside. semantic tags, on the other hand, actually describe what they’re for. for example, <code>&lt;nav&gt;</code> clearly says, “this is a menu,” while a <code>&lt;div&gt;</code> just says, “this is a box.”</p>
+    <p>to the browser, both types of tags work the same way. but semantic tags make your code easier to read, help screen readers explain the page to visually impaired users, and even help search engines understand what your page is about.</p>
     <textarea cols="50" rows="5">
 <!-- non-semantic example -->
 <div class="header">
@@ -48,8 +49,6 @@
 </div>
     </textarea>
     <h2>why should we use semantic tags?</h2>
-    <p>semantic tags make your html more intuitive and self-documenting, which helps developers understand the structure of your page at a glance. they also improve accessibility by providing clear landmarks for screen readers and assistive technologies. additionally, semantic html helps search engines better understand your content, which can boost your site's visibility and ranking.</p>
-    <hr>
+    <p>semantic tags make your code easier to read and understand—like labeling boxes when you move instead of just tossing everything in random containers. they also help people using screen readers navigate your site, and they give search engines clues about what your page is about, which can help your site show up in search results.</p>
 </body>
 </html>
-
