@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css measuring units</title>
+</head>
+<body>
+    <h1>css measuring units</h1>
+    <h2>absolute vs. relative css length units</h2>
+    <p>
+        in css, there are two main types of measuring units: absolute and relative.
+        <strong>absolute units</strong> are fixed and do not change based on the context, user settings, or device.
+        they provide precise control over an element's size, but lack flexibility across different screens and user preferences.
+        examples include pixels (px), centimeters (cm), and inches (in).
+        one pixel (1px) equals one device pixel at 100% zoom, and these units remain fixed unless the zoom level is changed.
+    </p>
+    <p>
+        <strong>relative units</strong> are dynamic and scale according to the parent element, viewport size, font size, or other factors.
+        they are ideal for responsive design, as they adapt to different screen sizes and user settings.
+        examples include viewport units (vw, vh), font-relative units (em, rem), and percentage (%).
+    </p>
+    <h2>absolute units in detail</h2>
+    <h3>px, pt</h3>
+    <p>
+        <strong>px (pixels):</strong> the most commonly used absolute unit.
+        1px is equal to one device pixel at 100% zoom.
+        pixels are fixed and do not scale with the user's font size settings, making them ideal for precise layouts.
+    </p>
+    <p>
+        <strong>pt (points):</strong> traditionally used in print.
+        1pt is equal to 1/72 of an inch.
+        points are useful for print stylesheets or when you need to match physical measurements.
+    </p>
+
+    <h3>in, pc</h3>
+    <p>
+        <strong>in (inches):</strong> 1in is equal to 96px on screens.
+        inches are used for print layouts or when you need to define sizes in physical units.
+    </p>
+    <p>
+        <strong>pc (picas):</strong> 1pc is equal to 12pt.
+        picas are another traditional print unit, often used in typography and print design.
+    </p>
+    <h3>q, cm, mm</h3>
+    <p>
+        <strong>q (quarter-millimeters):</strong> 1q is equal to 0.25mm.
+        this unit is useful for very fine measurements.
+    </p>
+    <p>
+        <strong>cm (centimeters):</strong> 1cm is equal to 10mm.
+        centimeters are commonly used in print and physical media.
+    </p>
+    <p>
+        <strong>mm (millimeters):</strong> millimeters are used for precise physical measurements, especially in print.
+    </p>
+    <h2>example code</h2>
+    <textarea rows="10" cols="50" readonly>
+body
+{   font-size: 16px;
+    margin: 2cm;
+    padding: 10mm;
+}
+.container
+{   width: 80%;
+    max-width: 12in;
+}
+.text
+{   font-size: 1.5rem;
+    line-height: 1.5;
+}
+    </textarea>
+    <p>
+        in this example, you can see both absolute and relative units in use.
+        the body's margin is set in centimeters, while the container's width is a percentage, and the text's font size is in rem.
+    </p>
+</body>
+</html>
