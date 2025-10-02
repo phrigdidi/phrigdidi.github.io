@@ -46,7 +46,7 @@ header
     color: white;
     text-align: center;
     width: 90%;
-    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     padding: 1rem;
     border-radius: 5px;
 }
