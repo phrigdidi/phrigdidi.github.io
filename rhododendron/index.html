@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP4: Pacific Rhododendron</title>
+    <link rel="stylesheet" href="styles.css" media="all">
+    <script>
+        window.addEventListener('scroll', function() {
+            const image = document.querySelector('.rotating-image');
+            const scrollPosition = window.scrollY;
+            image.style.transform = `rotate(${scrollPosition / 5}deg)`;
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>pacific rhododendron</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="image-container">
+                <img src="Pacific Rhododendron 2 - Gary Monroe-1.jpeg" alt="Pacific Rhododendron" class="rotating-image">
+            </div>
+            <div class="content">
+                <h2>about</h2>
+                <p> the Pacific Rhododendron (<em>Rhododendron macrophyllum</em>) is a species of rhododendron native to the west coast of  North America. </p>
+                <h3>alternate names</h3>
+                <p> California rosebay, California rhododendron, bigleaf rhododendron, </p>
+                <h3>size</h3>
+                <p> grows 7–30 ft tall tall </p>
+                <h3>geography</h3>
+                <p> native to the cascadia bioregion, from British Columbia to central California </p>
+                <h3>climate</h3>
+                <p> grows in moist, acidic soils in coastal forests and mountainous regions </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
