@@ -3,8 +3,8 @@ body
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #000;
+    color: white;
     height: 200vh;
 }
 header
@@ -49,17 +49,14 @@ header
 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     padding: 1rem;
-    color: white;
 }
 .content h2, .content h3
 {
     margin-bottom: 1.5rem;
-    color: white;
 }
 .content p
 {
     margin-bottom: 1rem;
-    color: white;
 }
 footer
 {
