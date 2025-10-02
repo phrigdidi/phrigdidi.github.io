@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css media queries</title>
+    <style> /*i wish i had made one style.css for all the code logs...*/
+        body {
+            font-family: arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h2 {
+            color: #333;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 3px;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background: #f4f4f4;
+        }
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+            }
+            .content {
+                flex: 1;
+                padding: 1rem;
+                text-align: center;
+        }    }
+    </style>
+</head>
+<body>
+    <h1>css media queries</h1>
+    <h2>how does a css media query work, and why is it useful?</h2>
+    <p> a css media query lets you apply different styles based on the device or viewport displaying your webpage. this is called responsive design, and it makes sure your site looks good on phones, tablets, and desktops.</p>
+    <p>for example, this code changes the layout only if the screen is at least 768 pixels wide:</p>
+    <pre><code>@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    .content {
+        flex: 1;
+        padding: 1rem;
+        text-align: center;
+    }
+}</code></pre>
+    <p>media queries are useful because they help you create websites that adapt to different screen sizes and devices.</p>
+    <h2>what "media features" are supported by media queries?</h2>
+    <table>
+        <tr>
+            <th>feature</th>
+            <th>example</th>
+            <th>what it does</th>
+        </tr>
+        <tr>
+            <td>width</td>
+            <td><code>@media (max-width: 600px)</code></td>
+            <td>applies styles if the viewport is up to 600px wide, useful for mobile layouts.</td>
+        </tr>
+        <tr>
+            <td>orientation</td>
+            <td><code>@media (orientation: landscape)</code></td>
+            <td>applies styles if the device is in landscape mode (width > height).</td>
+        </tr>
+        <tr>
+            <td>hover</td>
+            <td><code>@media (hover: hover)</code></td>
+            <td>applies styles if the device supports hover (like desktops, not touchscreens).</td>
+        </tr>
+        <tr>
+            <td>prefers-color-scheme</td>
+            <td><code>@media (prefers-color-scheme: dark)</code></td>
+            <td>applies styles if the user prefers a dark color scheme in their os settings.</td>
+        </tr>
+    </table>
+</body>
+</html>
