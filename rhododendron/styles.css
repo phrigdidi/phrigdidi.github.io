@@ -3,7 +3,6 @@ body
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #000;
     color: white;
     height: 200vh;
 }
@@ -49,6 +48,8 @@ header
 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
     padding: 1rem;
+    text-align: center;
+    width: 80%;
 }
 .content h2, .content h3
 {
@@ -62,7 +63,6 @@ footer
 {
     text-align: center;
     padding: 1rem;
-    background-color: #2c3e50;
     color: white;
     margin-top: 2rem;
 }
