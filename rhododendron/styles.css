@@ -14,6 +14,26 @@ header
     text-align: center;
     padding: 1rem;
 }
+.background-container
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rotating-image
+{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.1s ease-out;
+}
 .container
 {
     display: flex;
@@ -21,43 +41,40 @@ header
     padding: 1rem;
     max-width: 1200px;
     margin: 0 auto;
-}
-.background-container
-{
     position: relative;
-    text-align: center;
-    margin: 5rem 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 100vh;
 }
-.rotating-image
+.content
 {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transition: transform 0.1s ease-out;
+    padding: 2rem;
+    color: #333;
 }
-.text-overlay
+.content h2, .content h3
 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    width: 90%;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
-    padding: 1rem;
-    border-radius: 5px;
+    margin-bottom: 3rem;
 }
-.text-overlay h2
-{
-    margin-bottom: 1.5rem;
-}
-.text-overlay h3
+.content p
 {
     margin-bottom: 1rem;
+}
+footer
+{
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 2rem;
+}
+footer a
+{
+    color: #bbb;
+    text-decoration: underline;
+}
+footer a:hover
+{
+    color: white;
 }
 @media (min-width: 768px)
 {
@@ -65,9 +82,9 @@ header
     {
         flex-direction: row;
     }
-    .background-container
+    .content
     {
         flex: 1;
-        padding: 1rem;
+        padding: 2rem;
     }
 }
