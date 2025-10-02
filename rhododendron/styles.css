@@ -53,11 +53,11 @@ header
 }
 .text-overlay h2
 {
-    margin-bottom: 1.5rem; /* Add space below h2 */
+    margin-bottom: 1.5rem;
 }
 .text-overlay h3
 {
-    margin-bottom: 1rem; /* Add space below h3 */
+    margin-bottom: 1rem;
 }
 @media (min-width: 768px)
 {
