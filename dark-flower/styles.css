@@ -20,6 +20,22 @@ header
     padding: 1rem;
     position: relative;
 }
+#homeButton /* but like a button not a link */
+{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    z-index: 10;
+    text-decoration: none; 
+    display: inline-block; 
+}
 #toggleDarkMode 
 {
     position: absolute;
@@ -138,4 +154,5 @@ body.darkMode .background-container::before
         text-align: center;
     }
 }
+
 
