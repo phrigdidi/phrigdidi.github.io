@@ -17,6 +17,7 @@ header
 {
     color: white;
     text-align: center;
+    padding-top: 3rem;
     padding: 1rem;
     position: relative;
 }
@@ -154,5 +155,6 @@ body.darkMode .background-container::before
         text-align: center;
     }
 }
+
 
 
