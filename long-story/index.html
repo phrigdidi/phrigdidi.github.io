@@ -34,9 +34,17 @@
         </div>
     </div>
 
-    <!-- Skrollr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" integrity="sha512-A2+khatRDWHUE2VUtN4xUTkr1nc4YfDBw9Sg3ea6x0aRPfpcYieDZji4D2edDHy/yF5NsYzP7kL8sSM8s5EqCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/skrollr@0.6.30/dist/skrollr.min.js"></script> -->
-    <script src="script.js"></script>
+    <!-- Skrollr  ima about to do it without this script-->
+    <script src="js/skrollr.min.js"></script>
+       <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof skrollr !== 'undefined') {
+                skrollr.init({
+                    forceHeight: false,
+                    smoothScrolling: true
+                });
+            } else { console.error('Skrollr failed to load'); }
+        });
+    </script>
 </body>
 </html>
