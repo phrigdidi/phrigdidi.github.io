@@ -7,7 +7,6 @@ body, html
     font-family: 'Arial', sans-serif;
     color: white;
     line-height: 1.6;
-    /*background-color: #000; OMG KILL ME I LOST THISSSS or i thought it was fallback */
 }
 .background 
 {
@@ -20,9 +19,7 @@ body, html
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
-    opacity: 0; 
- /* transition: opacity 1s ease-in-out; /* did i ever even needd this? */
- /* background-color: red !important; /*temp test case*/
+    opacity: 0;
 }
 .content 
 {
@@ -35,7 +32,7 @@ body, html
 }
 .section 
 {
-    margin-bottom: 10rem; 
+    margin-bottom: 10rem;
 }
 .text-content 
 {
@@ -44,11 +41,7 @@ body, html
     line-height: 1.8;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
 }
-.text-content p {
+.text-content p 
+{
     margin-bottom: 4rem;
 }
-
-
-
-
-
