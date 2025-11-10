@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Long Story</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <!-- background images for fading why aren't they loaddding  -->
+    <!-- background images  -->
     <div class="background" id="bg1" style="background-image: url('confrence.png');" data-0="opacity:1;" data-1000="opacity:0;"></div>
     <div class="background" id="bg2" style="background-image: url('mouse.png');" data-1000="opacity:1;" data-2000="opacity:0;"></div>
     <div class="background" id="bg3" style="background-image: url('braincoral.png');" data-2000="opacity:1;" data-3000="opacity:0;"></div>
@@ -33,18 +34,19 @@
             </div>
         </div>
     </div>
-
-    <!-- Skrollr  ima about to do it without this script-->
+    <!--idk why i cann't make skrollr work but what im doing isn't that tricky
+     im just going to implement it in js myself?
+    <!-- Skrollr  ima about to do it without this script-/->
     <script src="js/skrollr.min.js"></script>
        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof skrollr !== 'undefined') {
+        document.addEventListener('DOMContentLoaded', function() {         
+            if (typeof skrollr !== 'undefined') {                            
                 skrollr.init({
-                    forceHeight: false,
+                    forceHeight: false,                    
                     smoothScrolling: true
                 });
             } else { console.error('Skrollr failed to load'); }
         });
-    </script>
+    </script>--> 
 </body>
 </html>
