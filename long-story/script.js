@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
 /* Skrollr */
     if (typeof skrollr !== 'undefined') {
-        skrollr.init({
+        s = skrollr.init({
             forceHeight: false,
             smoothScrolling: true,
             mobileCheck: function() { return false; }  //force skrollr to run on mobile
