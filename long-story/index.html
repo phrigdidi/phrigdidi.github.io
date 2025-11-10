@@ -39,12 +39,48 @@
     </div>
     <!-- Load Skrollr from a reliable CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-    <script>
+        <script>
         document.addEventListener('DOMContentLoaded', function() {
+            const bg1 = document.getElementById('bg1');
+            const bg2 = document.getElementById('bg2');
+            const bg3 = document.getElementById('bg3');
+            const sections = document.querySelectorAll('.section');
+
+            // calculate section heights and positions
+            const sectionPositions = [];
+            let cumulativeHeight = 0;
+
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                const sectionTop = cumulativeHeight;
+                const sectionHeight = rect.height;
+                const sectionBottom = sectionTop + sectionHeight;
+
+                sectionPositions[index] = {
+                    top: sectionTop,
+                    height: sectionHeight,
+                    bottom: sectionBottom
+                };
+
+                cumulativeHeight = sectionBottom;
+            });
+
+            // set data attributes for backgrounds based on section positions
+            bg1.setAttribute('data-0', 'opacity:1;');
+            bg1.setAttribute('data-' + sectionPositions[0].bottom, 'opacity:0;');
+
+            bg2.setAttribute('data-' + (sectionPositions[0].bottom / 2), 'opacity:0;');
+            bg2.setAttribute('data-' + ((sectionPositions[0].bottom + sectionPositions[1].bottom) / 2), 'opacity:1;');
+            bg2.setAttribute('data-' + sectionPositions[1].bottom, 'opacity:0;');
+
+            bg3.setAttribute('data-' + sectionPositions[1].bottom, 'opacity:0;');
+            bg3.setAttribute('data-' + sectionPositions[2].bottom, 'opacity:1;');
+
             if (typeof skrollr !== 'undefined') {
-                var s = skrollr.init({
+                skrollr.init({
                     forceHeight: false,
                     smoothScrolling: true
+                    mobileCheck: function() { return false; } // force skrollr to run on mobile
                 });
                 console.log('Skrollr initialized successfully');
             } else {
