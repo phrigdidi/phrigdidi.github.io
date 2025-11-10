@@ -1,5 +1,6 @@
 body, html 
 {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -79,3 +80,4 @@ body, html
     text-decoration: none;
     display: inline-block;
 }
+
