@@ -1,7 +1,7 @@
 /*
 this handles launching skrollr and calculating the background image fade in timing for storytelling
 moved everything js over here once it started to get to long again
-*/
+
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.section');
     const sectionPositions = [];
@@ -20,6 +20,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     console.log('Total page height:', document.body.scrollHeight);
+ i just wanted to make it responsive to at least diffrent desktop sizes... if not mobile oh well, hard coding it is*/
+document.addEventListener('DOMContentLoaded', function() {
+    // hard coding by logged section positions:
+    const sectionPositions = [
+        { top: 51, height: 3829, bottom: 3880 },   // section 1
+        { top: 772, height: 1136, bottom: 1908 },  // section 2
+        { top: 2068, height: 826, bottom: 2894 },  // section 3
+        { top: 3054, height: 826, bottom: 3880 }   // section 4
+    ];
 
     // set data attributes for backgrounds
     const bg1 = document.getElementById('bg1');
@@ -38,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     bg2.setAttribute('data-' + (sectionPositions[1].top + sectionPositions[1].height / 3 * 2), 'opacity:0;');
 
     // bg3: suddenly appear (no fade) a third of the way through section 2
+    bg3.setAttribute('data-0', 'opacity:0;');
     bg3.setAttribute('data-' + (sectionPositions[1].top + sectionPositions[1].height / 3), 'opacity:1;');
     bg3.setAttribute('data-' + sectionPositions[2].top, 'opacity:0;');
 
