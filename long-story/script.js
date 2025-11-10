@@ -2,7 +2,7 @@
 this handles launching skrollr and calculating the background image fade in timing for storytelling
 moved everything js over here once it started to get to long again
 */
-
+let s;
 document.addEventListener('DOMContentLoaded', function() {
     const bg1 = document.getElementById('bg1');
     const bg2 = document.getElementById('bg2');
