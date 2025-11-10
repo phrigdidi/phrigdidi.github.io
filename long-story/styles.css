@@ -21,8 +21,8 @@ body, html
     background-repeat: no-repeat;
     z-index: -1;
     opacity: 0; 
-    transition: opacity 1s ease-in-out; 
-  /*background-color: red !important; /*temp test case*/
+ /* transition: opacity 1s ease-in-out; /* did i ever even needd this? */
+ /* background-color: red !important; /*temp test case*/
 }
 .content 
 {
@@ -47,6 +47,7 @@ body, html
 .text-content p {
     margin-bottom: 4rem;
 }
+
 
 
 
