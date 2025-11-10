@@ -56,4 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     bg5.setAttribute('data-' + sectionPositions[2].bottom, 'opacity:0;');
     bg5.setAttribute('data-' + sectionPositions[3].bottom, 'opacity:1;');
+
+    setTimeout(() => { //refresh after calculations?
+        s.refresh();
+        console.log('Skrollr refreshed');
+    }, 500);
 });
