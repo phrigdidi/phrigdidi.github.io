@@ -7,7 +7,7 @@ body, html
     font-family: 'Arial', sans-serif;
     color: white;
     line-height: 1.6;
-    /*background-color: #000; OMG KILL ME I LOST THISSSS */
+    /*background-color: #000; OMG KILL ME I LOST THISSSS or i thought it was fallback */
 }
 .background 
 {
@@ -35,7 +35,7 @@ body, html
 }
 .section 
 {
-    margin-bottom: 8rem; 
+    margin-bottom: 10rem; 
 }
 .text-content 
 {
@@ -47,6 +47,7 @@ body, html
 .text-content p {
     margin-bottom: 4rem;
 }
+
 
 
 
