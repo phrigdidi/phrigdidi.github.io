@@ -34,7 +34,7 @@ body, html
 }
 .section 
 {
-    margin-bottom: 4rem; 
+    margin-bottom: 10rem; 
 }
 .text-content 
 {
@@ -43,3 +43,7 @@ body, html
     line-height: 1.8;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
 }
+.text-content p {
+    margin-bottom: 2rem;
+}
+
